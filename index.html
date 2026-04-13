@@ -62,7 +62,7 @@
     </div>
   </div>
 
-  <!-- Table wrapper: sticky header, scrollable body -->
+  <!-- Table: header sticks at top, only body scrolls -->
   <div class="table-outer">
     <div class="table-wrapper">
       <table class="raffles-table" id="contactTable" style="width:100%">
@@ -71,6 +71,14 @@
       </table>
     </div>
   </div>
+
+  <!-- Bottom bar: Show N / info / pagination — always visible, never scrolls -->
+  <div class="table-bottom-bar" id="tableBottomBar">
+    <div id="dtLength"></div>
+    <div id="dtInfo"></div>
+    <div id="dtPaginate"></div>
+  </div>
+
 </div><!-- /.page-wrapper -->
 
 <!-- Add/Edit Contact Modal -->
@@ -417,8 +425,8 @@
 </div>
 
 <!-- Scripts -->
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+
 <script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
